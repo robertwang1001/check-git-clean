@@ -1,7 +1,7 @@
 {
   "name": "check-git-clean",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "packageManager": "pnpm@11.2.2",
   "description": "Check the cleanliness of a Git working directory, identifying untracked, unstaged, and uncommitted changes",
   "author": {
