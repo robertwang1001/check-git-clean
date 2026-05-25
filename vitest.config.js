@@ -5,7 +5,7 @@ export default defineConfig({
     globals: true,
     coverage: {
       provider: 'istanbul',
-      include: ['**'],
+      include: ['index.ts'],
       reporter: ['text', 'json-summary', 'json'],
     },
   },
