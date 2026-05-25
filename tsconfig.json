@@ -1,8 +1,12 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "extends": "@tsconfig/node24/tsconfig.json",
   "compilerOptions": {
-    "types": ["vitest/globals"],
+    "types": [
+      "vitest/globals"
+    ],
     "declaration": true
   },
-  "files": ["index.ts"]
+  "files": [
+    "index.ts"
+  ]
 }

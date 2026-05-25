@@ -1,15 +1,15 @@
 import { exec as _exec } from 'node:child_process'
-import { promisify } from 'node:util'
-import path from 'node:path'
 import fs from 'node:fs/promises'
 import { tmpdir } from 'node:os'
+import path from 'node:path'
+import { promisify } from 'node:util'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { checkGitClean } from './index'
 
 const exec = promisify(_exec)
 
 describe('checkGitClean', () => {
-  let repoDir
+  let repoDir: string
 
   beforeEach(async () => {
     // Create a temporary directory
@@ -22,8 +22,8 @@ describe('checkGitClean', () => {
   })
 
   describe('non git working directory', () => {
-    it('should throw an error if working directory is not a git working directory', () => {
-      expect(() => checkGitClean(repoDir)).rejects.toThrow()
+    it('should throw an error if working directory is not a git working directory', async () => {
+      await expect(() => checkGitClean(repoDir)).rejects.toThrow()
     })
   })
 

@@ -1,9 +1,9 @@
+import { exec as _exec } from 'node:child_process'
+import { realpath } from 'node:fs/promises'
+import { EOL } from 'node:os'
 import path from 'node:path'
 import process from 'node:process'
-import { EOL } from 'node:os'
-import { exec as _exec } from 'node:child_process'
 import { promisify } from 'node:util'
-import { realpath } from 'node:fs/promises'
 
 const exec = promisify(_exec)
 

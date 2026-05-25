@@ -3,10 +3,10 @@ name: Test and Coverage
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 permissions:
   contents: read
@@ -23,13 +23,12 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9.15.9
           run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.22.3'
+          node-version: 24.15.0
           registry-url: 'https://registry.npmjs.org'
           cache: pnpm
 
