@@ -54,14 +54,14 @@
     "@tsconfig/node24": "^24.0.5",
     "@types/mock-fs": "^4.13.4",
     "@types/node": "^24.13.4",
-    "@vitest/coverage-istanbul": "^4.1.11",
+    "@vitest/coverage-istanbul": "^5.0.1",
     "copyfiles": "^2.4.1",
     "eslint": "^10.10.0",
     "lint-staged": "^17.5.1",
     "simple-git-hooks": "^2.14.0",
     "type-fest": "^5.9.0",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.11"
+    "vitest": "^5.0.1"
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm commitlint --edit ${1}",
